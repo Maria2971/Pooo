@@ -1,0 +1,147 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo do corpo da página */
+body {
+background-image: url(img/10.png);
+background-repeat: no-repeat;
+background-size: cover;
+
+/* Centraliza o conteúdo */
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+
+/* Caixa principal */
+.container {
+background: rgba(0, 0, 0, 0.6);
+width: 100%;
+max-width: 900px;
+border-radius: 20px;
+padding: 30px;
+margin-top:120px;
+
+/* Sombra */
+box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Título */
+h1 {
+text-align: center;
+margin-bottom: 20px;
+color: #0d67c2;
+font-size: 40px;
+}
+
+/* Área de busca */
+.search-box {
+display: flex;
+gap: 5px;
+margin-bottom: 30px;
+
+}
+
+/* Campo input */
+.search-box input {
+flex: 1;
+padding: 14px;
+border-radius: 10px;
+border: 2px solid #ddd;
+font-size: 16px;
+}
+
+/* Botão */
+.search-box button {
+background: transparent;
+padding: 0;
+border: none;
+cursor: pointer;
+display: inline-flex;
+line-height: 0;
+}
+
+
+/* Card do Pokémon */
+.pokemon-card {
+
+/* Inicialmente escondido */
+display: none;
+
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+align-items: center;
+}
+
+/* Área da imagem */
+.pokemon-image {
+text-align: center;
+}
+
+/* Imagem do Pokémon */
+.pokemon-image img {
+width: 250px;
+}
+
+/* Informações do Pokémon */
+.pokemon-info h2 {
+font-size: 36px;
+margin-bottom: 10px;
+color: white;
+text-align: center;
+
+/* Primeira letra maiúscula */
+text-transform: capitalize;
+}
+
+/* Área dos tipos */
+.types {
+display: flex;
+gap: 10px;
+margin-bottom: 20px;
+}
+
+/* Badge de tipo */
+.type {
+padding: 8px 14px;
+border-radius: 20px;
+color: white;
+font-weight: bold;
+text-transform: uppercase;
+font-size: 12px;
+}
+
+/* Área dos status */
+.stats {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+/* Cada status */
+.stat {
+background: #f2f2f2;
+padding: 10px;
+border-radius: 10px;
+}
+
+/* Mensagem de erro */
+.error {
+text-align: center;
+color: red;
+font-weight: bold;
+margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+.pokemon-card {
+grid-template-columns: 1fr;
+}
+}

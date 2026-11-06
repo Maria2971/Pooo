@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="style.css">
+<!-- Título da página -->
+<title>Pokédex API</title>
+
+</head>
+<body>
+
+<!-- Container principal -->
+<div class="container">
+
+
+
+<!-- Área de pesquisa -->
+<div class="search-box">
+
+<!-- Campo para digitar nome ou número -->
+<input
+type="text"
+id="pokemonInput"
+placeholder="Digite o nome ou número do Pokémon"
+>
+
+<!-- Botão de busca -->
+<button onclick="buscarPokemon()" >
+<img src="img/images-removebg-preview.png" alt="" width="80">
+</button>
+</div>
+
+<!-- Card com informações do Pokémon -->
+<div class="pokemon-card" id="pokemonCard">
+
+<!-- Imagem -->
+<div class="pokemon-image">
+<img id="pokemonImage" src="" alt="Pokemon">
+</div>
+
+<!-- Informações -->
+<div class="pokemon-info">
+
+<!-- Nome -->
+<h2 id="pokemonName"></h2>
+
+<!-- Tipos -->
+<div class="types" id="pokemonTypes"></div>
+
+<!-- Status -->
+<div class="stats" id="pokemonStats"></div>
+</div>
+</div>
+
+<!-- Mensagem de erro -->
+<div class="error" id="error"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
